@@ -1,0 +1,8 @@
+class InventoriesController < ApplicationController
+def index
+@inventories = Inventories.all
+end
+def show
+@inventories = Inventories.find(params[:id])
+end
+end

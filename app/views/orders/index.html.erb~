@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+<body style="background-color:lightgrey">
+<h1 align="center"><U>List Of Orders</U></h1>
+<br><br>
+<br><br>
+<table>
+  <thead>
+    <tr>
+      <th>Order ID</th>
+      
+      <td><th>Customer ID</th></td>
+      
+      <td><th>Product ID</th></td>
+      <td><th>Quantity</th></td>
+      <td><th>Perches date</th></td>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr>
+        <td><%= order.orderid %></td>
+        <td><td><%= order.customerid %></td></td>
+        <td><td><%= order.productid %></td></td>
+        <td><td><%= order.quantity %></td></td>
+        <td><td><%= order.perchesdate %></td></td>
+        <td><td><%= link_to 'Show', order %></td></td>
+        <td><%= link_to 'Edit', edit_order_path(order) %></td>
+        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Order', new_order_path %>
+<br>
+<%= link_to 'Back Inventory Home', controller: 'inventories' %>

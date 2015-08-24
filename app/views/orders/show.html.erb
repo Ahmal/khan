@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Orderid:</strong>
+  <%= @order.orderid %>
+</p>
+
+<p>
+  <strong>Customerid:</strong>
+  <%= @order.customerid %>
+</p>
+
+<p>
+  <strong>Productid:</strong>
+  <%= @order.productid %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @order.quantity %>
+</p>
+
+<p>
+  <strong>Perchesdate:</strong>
+  <%= @order.perchesdate %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

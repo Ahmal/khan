@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Salesmanname:</strong>
+  <%= @salesman.salesmanName %>
+</p>
+
+<p>
+  <strong>Salesmanid:</strong>
+  <%= @salesman.salesmanid %>
+</p>
+
+<p>
+  <strong>Salesmanaddress:</strong>
+  <%= @salesman.salesmanAddress %>
+</p>
+
+<p>
+  <strong>Salesmanarea:</strong>
+  <%= @salesman.salesManarea %>
+</p>
+
+<%= link_to 'Edit', edit_salesman_path(@salesman) %> |
+<%= link_to 'Back', salesmen_path %>

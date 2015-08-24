@@ -1,0 +1,28 @@
+<html>
+<body style="background-color:lightgrey">
+<h1 style="font-size:500% ;color:blue;" align="center"><U>Khan Traders<HR></U></h1>
+</body>
+<html>
+<br><br><br><br>
+<table>
+<% @inventories.each do |inventories| %>
+<% end %>
+</table>
+<h1>Inventories!</h1>
+<%= link_to 'Customer', controller: 'customers' %>
+<%= link_to 'Products', controller: 'products' %>
+<%= link_to 'Salesmen', controller: 'salesmen' %>
+<%= link_to 'Orders', controller: 'orders' %>
+<br><br>
+<Html>
+<Body>
+<Marquee>
+<%= link_to 'Back Inventory Home', controller: 'inventories' %>
+<h1 style="font-size:200% ;color:blue;"><B>My project is still in progres<br><br><br>
+Old price of Project = <S>4500</S>
+<br>New price = <h1 style="font-size:100% ;color:red;">4200</h1>
+</B></h1> 
+</Marquee>
+</body>
+</html>
+
